@@ -1,0 +1,89 @@
+.Gauge-item {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  background-color: black;
+  margin: 5px;
+}
+
+.Red-gauge {
+  background-color: red;
+  border: 2px solid darkred;
+}
+
+.Purple-gauge {
+  background-color: darkmagenta;
+  border: 2px solid purple;
+}
+
+.Green-gauge {
+  background-color: green;
+  border: 2px solid darkgreen;
+}
+
+.Filled {
+  height: 20px;
+  transition: width 0.5s ease-in-out;
+  margin: 0px;
+  border-right: 0px;
+  border-radius: 10px 0 0 10px;
+}
+
+.Empty {
+  height: 20px;
+  width: 100%;
+  transition: width 0.5s ease-in-out;
+  margin: 0px;
+  border-left: 0px;
+  background-color: #999999;
+  border-radius: 0 10px 10px 0;
+}
+
+.Console-item {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background-color: black;
+  color: lime;
+  font-family: "Courier New", Courier, monospace;
+  font-size: small;
+  padding: 1px;
+  margin: 5px;
+  border-radius: 0 10px 0 10px;
+  height: 100px;
+  overflow-y: auto;
+}
+
+.Info-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+  background-color: #222222;
+  color: white;
+  font-family: "Courier New", Courier, monospace;
+  font-size: small;
+  padding: 5px;
+  margin: 2px;
+  border-radius: 3px;
+}
+
+.Action-item {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-family: "Arial", sans-serif;
+  /* font-size: 1.1em; */
+  font-weight: 900;
+  max-width: 100px;
+  padding: 0 10px 0 10px;
+  margin: 0 5px 0 5px;
+  border-radius: 8px;
+  border: 2px solid;
+  cursor: pointer;
+  transition: background-color 0.3s, border-color 0.3s;
+}

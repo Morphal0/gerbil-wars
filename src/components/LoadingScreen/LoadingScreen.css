@@ -1,0 +1,30 @@
+.Loading-screen {
+  min-height: 100vh;
+  background-color: #000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.Loading-screen h1 {
+  color: #fff;
+  font-size: 5rem;
+  letter-spacing: 0.2em;
+  transition: opacity 1.5s ease;
+  margin: 0;
+  font-weight: 900;
+  text-shadow: 0 0 32px #fff, 0 0 8px #fff;
+}
+
+.Loading-screen h2 {
+  color: #fff;
+  font-size: 1.5rem;
+  margin-top: 2rem;
+  transition: opacity 1s ease;
+  font-weight: 400;
+  text-align: center;
+  max-width: 90vw;
+  font-style: italic;
+  text-shadow: 0 0 32px #fff, 0 0 8px #fff;
+}
