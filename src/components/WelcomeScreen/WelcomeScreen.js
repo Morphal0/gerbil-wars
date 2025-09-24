@@ -1,8 +1,9 @@
 import React, { useState } from "react";
+import { Game } from "../../GameEngine";
 import "./WelcomeScreen.css";
 
 const WelcomeScreen = ({
-  onStartGame,
+  setGameStatus,
   musicVolume,
   setMusicVolume,
   sfxVolume,
@@ -14,7 +15,12 @@ const WelcomeScreen = ({
     <div className="WelcomeBackground">
       <div className="WelcomeCard">
         <h1 className="GameTitle">Gerbil Wars</h1>
-        <button className="WelcomeButton" onClick={onStartGame}>
+        <button
+          className="WelcomeButton"
+          onClick={() => {
+            setGameStatus(Game.status.PLAYING);
+          }}
+        >
           Start New Game
         </button>
 

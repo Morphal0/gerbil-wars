@@ -29,6 +29,7 @@ export class Game {
    */
   static status = Object.freeze({
     LOADING: "loading",
+    WELCOME: "welcome",
     PLAYING: "playing",
     GERBIL_TURN: "gerbil_turn",
     EVIL_HAND_TURN: "evil_hand_turn",
@@ -38,6 +39,7 @@ export class Game {
   });
 
   state;
+  previousState;
 
   constructor() {
     this.gerbil = new Player();
@@ -49,6 +51,7 @@ export class Game {
     // while (this.state === Game.status.PLAYING) {
     while (true) {
       console.log("Time is moving forward...");
+      this.previousState = this.state;
 
       if (this.gerbil.turn >= 100) {
         console.log("Gerbil's turn!");
